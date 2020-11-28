@@ -105,6 +105,22 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Boolean MainMenu
+        {
+            get
+            {
+                return SteamVR_Actions.default_MainMenu;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean Lazer_Pointer
+        {
+            get
+            {
+                return SteamVR_Actions.default_Lazer_Pointer;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get

@@ -50,6 +50,14 @@
       "type": "boolean"
     },
     {
+      "name": "/actions/default/in/MainMenu",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/Lazer Pointer",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
