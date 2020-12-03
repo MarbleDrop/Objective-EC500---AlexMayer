@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3243315382305015337}
   - component: {fileID: 1922273693377415564}
   - component: {fileID: 4416270867559234886}
+  - component: {fileID: 6151953838353738286}
   m_Layer: 0
   m_Name: Trophy
   m_TagString: Untagged
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6151953838353738286
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2758809383900650643}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0011865975, y: 0.0011865979, z: 0.004690247}
+  m_Center: {x: -3.6949697e-12, y: 1.4348484e-11, z: 0.0002283121}

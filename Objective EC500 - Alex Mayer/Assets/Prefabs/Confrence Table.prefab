@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 980279854052472589}
   - component: {fileID: 4194395792700340392}
   - component: {fileID: 2148651921204513890}
+  - component: {fileID: 619193326339478405}
+  - component: {fileID: 2765257948595390774}
   m_Layer: 0
   m_Name: Confrence Table
   m_TagString: Untagged
@@ -79,3 +81,29 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &619193326339478405
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491305749917773239}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04103826, y: 0.079949155, z: 0.0017617305}
+  m_Center: {x: 0.00011035312, y: -0.00036766732, z: 0.009210811}
+--- !u!65 &2765257948595390774
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491305749917773239}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.031659506, y: 0.05738365, z: 0.015033267}
+  m_Center: {x: -0.00008376433, y: 0.000081494596, z: 0.0007411515}
