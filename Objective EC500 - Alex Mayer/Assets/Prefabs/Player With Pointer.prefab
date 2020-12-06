@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 8372653795310197598}
   - component: {fileID: 8372653795303389778}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Player With Pointer
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -493,7 +493,7 @@ GameObject:
   - component: {fileID: 8372653795307405170}
   m_Layer: 26
   m_Name: HeadCollider
-  m_TagString: Untagged
+  m_TagString: Goggles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -523,7 +523,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.12
+  m_Radius: 0.14
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &8372653795307405170
 Rigidbody:

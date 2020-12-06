@@ -7,6 +7,8 @@ public class MainMenu : MonoBehaviour
 {
     public bool loadLevel = false;
     public GameObject Load;
+    
+    // Linked to the play button starts the game by setting load to true.
     public void PlayGame()
     {
         bool loadLevel = true;
@@ -17,6 +19,7 @@ public class MainMenu : MonoBehaviour
         }
     }
 
+    // Quits the game if quit button is pressed.
     public void QuitGame()
     {
         Debug.Log("QUIT");

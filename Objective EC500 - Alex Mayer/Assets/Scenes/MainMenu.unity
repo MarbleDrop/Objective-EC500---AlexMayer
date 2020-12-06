@@ -3196,6 +3196,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8372653795297070824, guid: d11e9488c8174a84e8b66d0d82d2763a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372653795297070824, guid: d11e9488c8174a84e8b66d0d82d2763a,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372653795297070824, guid: d11e9488c8174a84e8b66d0d82d2763a,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.26938587
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372653795297070824, guid: d11e9488c8174a84e8b66d0d82d2763a,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.0043489933
+      objectReference: {fileID: 0}
     - target: {fileID: 8372653795303324122, guid: d11e9488c8174a84e8b66d0d82d2763a,
         type: 3}
       propertyPath: m_Enabled
@@ -4957,8 +4977,8 @@ Transform:
   - {fileID: 2073327263}
   - {fileID: 1949013172}
   - {fileID: 2122664729}
-  - {fileID: 73439610}
   - {fileID: 971336630}
+  - {fileID: 73439610}
   - {fileID: 1181221773}
   - {fileID: 1898612521}
   m_Father: {fileID: 0}

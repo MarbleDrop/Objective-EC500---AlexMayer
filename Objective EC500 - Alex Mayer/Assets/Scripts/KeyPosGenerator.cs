@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KeyPosGenerator : MonoBehaviour
 {
-    public GameObject Key1;
+    public GameObject key1;
     public GameObject key2;
     public GameObject key3;
     public GameObject key4;
@@ -14,10 +14,12 @@ public class KeyPosGenerator : MonoBehaviour
 
     void Start()
     {
+        // Generates a random number and sets a specific key active depending on the number generated.
         randomNum = Random.Range(1, 6);
+
         if (randomNum == 1)
         {
-            Key1.SetActive(true);
+            key1.SetActive(true);
         }
         else if(randomNum == 2)
         {
@@ -36,6 +38,4 @@ public class KeyPosGenerator : MonoBehaviour
             key5.SetActive(true);
         }
     }
-
-    
 }
