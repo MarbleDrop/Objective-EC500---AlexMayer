@@ -8,6 +8,9 @@ TagManager:
   - key
   - Glass Door
   - Trophy
+  - GreenBlue
+  - GreenRed
+  - RedBlue
   layers:
   - Default
   - TransparentFX
