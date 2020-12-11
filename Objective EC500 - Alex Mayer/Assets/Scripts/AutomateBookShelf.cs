@@ -25,6 +25,8 @@ public class AutomateBookShelf : MonoBehaviour
     // For the sound to play.
     public AudioSource OpenSound;
 
+    public GameObject NumPad;
+
     // Modified this script to hold 3 other detetcion scripts.
     private void Start()
     {
@@ -51,6 +53,7 @@ public class AutomateBookShelf : MonoBehaviour
         }
         if (entered == true)
         {
+            NumPad.SetActive(true);
             new WaitForSeconds(1);
             if (distanceTraveled < 6f)
             {
