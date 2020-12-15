@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class NumberViewer : MonoBehaviour
 {
     [SerializeField]
-    Text codeText;
+    TextMeshProUGUI codeText;
     string codeTextValue = "";
 
     private void Update()

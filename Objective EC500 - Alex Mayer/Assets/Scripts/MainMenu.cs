@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour
         bool loadLevel = true;
         if(loadLevel == true)
         {
+            DestroyObject(GameObject.Find("Fish Area"));
             Load.SetActive(true);
             Debug.Log("Button was clicked");
         }

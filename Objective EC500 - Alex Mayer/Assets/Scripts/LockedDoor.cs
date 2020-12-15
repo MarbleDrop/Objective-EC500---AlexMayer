@@ -5,18 +5,26 @@ using Valve.VR.InteractionSystem;
 
 public class LockedDoor : MonoBehaviour
 {
+    // Used to disable interaction and enable "the Lock"
     public GameObject toDisableHovering;
     public GameObject toEnableHovering;
     
+    // refrences all keys
     public GameObject key1;
     public GameObject key2;
     public GameObject key3;
     public GameObject key4;
     public GameObject key5;
 
+    // Audio for unlocking sound
+    public AudioSource OpenSound;
+
     private void Start()
     {
+        // makes sure that the object is locked when the game starts
         DisableHovering();
+        // makes sure that sound is found
+        OpenSound = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -31,6 +39,7 @@ public class LockedDoor : MonoBehaviour
             Destroy(key4);
             Destroy(key5);
             EnableHovering();
+            OpenSound.Play(0);
         }
     }
     public void EnableHovering()

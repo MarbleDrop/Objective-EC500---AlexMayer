@@ -4,18 +4,34 @@ using UnityEngine;
 
 public class Numbers : MonoBehaviour
 {
+    // helps me view the random number.
     public int rand;
 
+    // helps me view all the solutions.
     public bool Solution1 = false;
     public bool Solution2 = false;
     public bool Solution3 = false;
     public bool Solution4 = false;
     public bool Solution5 = false;
 
+    // for setting all the codes proper.
     public string Code1Temp = "";
     public static bool Temp = false;
     public string Code2Food = "";
     public static bool Food = false;
+
+    // for the win condition.
+    public bool loadLevel = false;
+    public GameObject Load;
+
+    // Objects to be destroyed When winning.
+    public GameObject FiishFood;
+    public GameObject TempGauge;
+    public GameObject FishTank;
+    public GameObject Chest;
+    public GameObject TempNumber;
+    public GameObject Left;
+    public GameObject Right;
 
     private void Start()
     {
@@ -69,6 +85,34 @@ public class Numbers : MonoBehaviour
         {
             Code1Temp = "12";
             Code2Food = "34";
+        }
+    }
+    // starts win condition if both conditions are met.
+    private void Update()
+    {
+        if (Temp == true && Food == true)
+        {
+            WinCondition();
+            DestroyObject(FiishFood);
+            DestroyObject(TempGauge);
+            DestroyObject(FishTank);
+            DestroyObject(Chest);
+            DestroyObject(TempNumber);
+            DestroyObject(Left);
+            DestroyObject(Right);
+        }
+    }
+
+    // Brings you back to the main menu.
+    private void WinCondition()
+    {
+        bool loadLevel = true;
+        if (loadLevel == true)
+        {
+            GameObject.Find("GameClockCode").GetComponent<DigitalClockSystem>().isTimer = false;
+            DontDestroyOnLoad(GameObject.Find("GameClockCode"));
+            Load.SetActive(true);
+            Debug.Log("You win");
         }
     }
 }

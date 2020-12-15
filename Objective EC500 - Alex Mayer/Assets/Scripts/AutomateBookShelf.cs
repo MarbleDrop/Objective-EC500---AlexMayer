@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class AutomateBookShelf : MonoBehaviour
 {
@@ -26,22 +27,13 @@ public class AutomateBookShelf : MonoBehaviour
     public AudioSource OpenSound;
 
     public GameObject NumPad;
+    public GameObject Cold;
 
     // Modified this script to hold 3 other detetcion scripts.
     private void Start()
     {
         OpenSound = GetComponent<AudioSource>();
     }
-
-   // private void OnTriggerExit(Collider other)
-   // {
-        // If the Trophy exits the desk trigger the doors will close and stop at the starting point.
-    //    if (other.gameObject.CompareTag("Trophy"))
-    //    {
-    //        entered = false;
-    //       exit = true;
-    //    }
-   // }
 
     // Update is where the code is for door opening as Time.deltaTime did not work in the on trigger enter/exit.
     private void Update()
@@ -57,6 +49,7 @@ public class AutomateBookShelf : MonoBehaviour
             new WaitForSeconds(1);
             if (distanceTraveled < 6f)
             {
+                Cold.SetActive(true);
                 Left.transform.Translate(OpenSpeedL * Time.deltaTime);
                 Right.transform.Translate(OpenSpeedR * Time.deltaTime);
                 distanceTraveled += 5f * Time.deltaTime;
@@ -66,19 +59,5 @@ public class AutomateBookShelf : MonoBehaviour
                 OpenSound.Play(0);
             }
         }
-
-  //      if (exit == true)
-  //      {
-  //          if (distanceTraveled > 0f)
-  //          {
-  //              Left.transform.Translate(CloseSpeedL * Time.deltaTime);
-  //              Right.transform.Translate(CloseSpeedR * Time.deltaTime);
-  //              distanceTraveled -= 5f * Time.deltaTime;
-  //          }
-  //          if (distanceTraveled > 15f)
-  //          {
-  //              OpenSound.Play(0);
-  //          }
-  //      }
     }
 }
