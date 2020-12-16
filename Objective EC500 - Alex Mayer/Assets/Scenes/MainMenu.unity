@@ -184,7 +184,7 @@ MonoBehaviour:
     anyone that puts it on.\n\t\n\tIt is your job to carry out Objective EC-500 and
     shut down the servers running the headsets. To do so you must infiltrate the
     server room located somewhere inside SoVReignty's head office. We have found
-    the CEO's scedual, the room will be clear for 15 minutes at noon that's when
+    the CEO's scedual, the room will be clear for 20 minutes at noon that's when
     you will strike.\n\nGood Luck.\n\t  "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -449,7 +449,7 @@ Transform:
   m_Children:
   - {fileID: 178346228}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &120894760
 PrefabInstance:
@@ -3430,7 +3430,7 @@ PrefabInstance:
     - target: {fileID: 8372653795310197598, guid: d11e9488c8174a84e8b66d0d82d2763a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.009
+      value: 1.001
       objectReference: {fileID: 0}
     - target: {fileID: 8372653795310197598, guid: d11e9488c8174a84e8b66d0d82d2763a,
         type: 3}
@@ -3440,7 +3440,7 @@ PrefabInstance:
     - target: {fileID: 8372653795310197598, guid: d11e9488c8174a84e8b66d0d82d2763a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.47
+      value: 3.825
       objectReference: {fileID: 0}
     - target: {fileID: 8372653795310197598, guid: d11e9488c8174a84e8b66d0d82d2763a,
         type: 3}

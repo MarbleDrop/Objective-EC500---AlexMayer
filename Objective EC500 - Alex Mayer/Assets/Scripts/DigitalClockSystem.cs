@@ -14,8 +14,8 @@ public class DigitalClockSystem : MonoBehaviour
     public bool isTimer = true;
     public string TimerValue = "";
 
-    // Ends game if 15 minutes is reached.
-    public bool min15 = false;
+    // Ends game if 20 minutes is reached.
+    public bool min20 = false;
     public bool LoadLevel = false;
     public GameObject Load;
 
@@ -38,7 +38,7 @@ public class DigitalClockSystem : MonoBehaviour
             DisplayTime();
         }
 
-        if (TimerValue == "15:00")
+        if (TimerValue == "20:00")
         {
             GameOver();
         }
