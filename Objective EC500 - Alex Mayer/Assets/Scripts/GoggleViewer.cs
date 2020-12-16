@@ -21,9 +21,8 @@ public class GoggleViewer : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Checks to see if Head collider with tag "Goggles" enters if it does it enables marker depending on which key is active.
-        if (other.gameObject.CompareTag("Goggles"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Collision Worked");
             if (key1.activeInHierarchy == true)
             {
                 BookShelf.SetActive(true);
@@ -50,9 +49,8 @@ public class GoggleViewer : MonoBehaviour
     // Checks to see if Head collider with tag "Goggles" Exits if it does it disables marker depending on which key is active.
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Goggles"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Exit Worked");
             if (key1.activeInHierarchy == true)
             {
                 BookShelf.SetActive(false);

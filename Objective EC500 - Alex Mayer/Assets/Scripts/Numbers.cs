@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Numbers : MonoBehaviour
 {
@@ -23,6 +24,9 @@ public class Numbers : MonoBehaviour
     // for the win condition.
     public bool loadLevel = false;
     public GameObject Load;
+    public AudioSource Win;
+    public AudioMixerSnapshot Winning;
+    public bool winsounds = true;
 
     // Objects to be destroyed When winning.
     public GameObject FiishFood;
@@ -106,6 +110,13 @@ public class Numbers : MonoBehaviour
     // Brings you back to the main menu.
     private void WinCondition()
     {
+        // since win condition is is update function it needs this if statement to only be called once
+        if (winsounds == true)
+        {
+            Winning.TransitionTo(0.9f);
+            Win.Play();
+        }
+        
         bool loadLevel = true;
         if (loadLevel == true)
         {
